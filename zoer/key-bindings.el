@@ -46,4 +46,8 @@
 (global-set-key (kbd "C-x g") 'webjump)
 (global-set-key (kbd "C-x M-g") 'browse-url-at-point)
 
+;; Magit
+(global-set-key (kbd "C-x m") 'magit-status)
+(autoload 'magit-status "magit")
+
 (provide 'key-bindings)

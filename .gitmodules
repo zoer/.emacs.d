@@ -1,6 +1,6 @@
-[submodule "site-lisp/dash"]
-	path = site-lisp/dash
+[submodule "zoer/site-lisp/dash"]
+	path = zoer/site-lisp/dash
 	url = https://github.com/magnars/dash.el.git
-[submodule "site-lisp/diminish"]
-	path = site-lisp/diminish
+[submodule "zoer/site-lisp/diminish"]
+	path = zoer/site-lisp/diminish
 	url = https://github.com/emacsmirror/diminish

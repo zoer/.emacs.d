@@ -1,9 +1,13 @@
+(setq config-directory
+      (file-name-as-directory
+       (concat user-emacs-directory "zoer")))
+
 ;; Set path to dependencies
 (setq site-lisp-dir
-      (expand-file-name "site-lisp" user-emacs-directory))
+      (expand-file-name "site-lisp" config-directory))
 
 ;; Set up load path
-(add-to-list 'load-path user-emacs-directory)
+(add-to-list 'load-path config-directory)
 (add-to-list 'load-path site-lisp-dir)
 
 ;; Add external projects to load path
@@ -14,7 +18,7 @@
 ;; Write backup files to own directory
 (setq backup-directory-alist
       `(("." . ,(expand-file-name
-                 (concat user-emacs-directory "backups")))))
+                 (concat config-directory "backups")))))
 
 ;; Make backups of files, even when they're in version control
 (setq vc-make-backup-files t)
@@ -22,7 +26,7 @@
 ;; Save point position between sessions
 (require 'saveplace)
 (setq-default save-place t)
-(setq save-place-file (expand-file-name ".places" user-emacs-directory))
+(setq save-place-file (expand-file-name ".places" config-directory))
 
 ;; Set up appearance early
 (require 'appearance)
@@ -93,7 +97,7 @@
 (require 'setup-macros)
 
 ;; Functions (load all files in defuns-dir)
-(setq defuns-dir (expand-file-name "defuns" user-emacs-directory))
+(setq defuns-dir (expand-file-name "defuns" config-directory))
 (dolist (file (directory-files defuns-dir t "\\w+"))
   (when (file-regular-p file)
     (load file)))

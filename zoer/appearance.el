@@ -1,5 +1,5 @@
 ;; Set custom theme path
-(setq custom-theme-directory (concat user-emacs-directory "themes"))
+(setq custom-theme-directory (concat config-directory "themes"))
 
 (dolist
     (path (directory-files custom-theme-directory t "\\w+"))
