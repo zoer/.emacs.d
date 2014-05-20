@@ -3,11 +3,16 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        autopair-insert-or-skip-quote
         beginning-of-buffer
         describe-key
         eval-last-sexp
         forward-sentence
         mouse-yank-primary
+        overwrite-mode
+        paredit-forward-delete
+        paredit-forward-kill-word
+        paredit-kill-region-or-backward-word
         smex
         yank-rectangle
         ))

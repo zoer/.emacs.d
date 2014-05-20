@@ -50,4 +50,8 @@
 (global-set-key (kbd "C-x m") 'magit-status)
 (autoload 'magit-status "magit")
 
+;; Goto last change
+(global-set-key (kbd "C-.") 'goto-last-change)
+(global-set-key (kbd "C-,") 'goto-last-change-reverse)
+
 (provide 'key-bindings)

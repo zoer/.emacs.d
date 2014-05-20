@@ -47,6 +47,7 @@
      flx
      flx-ido
      css-eldoc
+     goto-chg
      yasnippet
      smartparens
      shell-command
@@ -155,3 +156,4 @@
   (add-hook it 'turn-on-smartparens-mode))
 
 (smex-initialize)
+
