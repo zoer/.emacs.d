@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: have_many(...).of_type(...)
+# --
+have_many(:$1).of_type($0)

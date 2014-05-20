@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: before(:{$1:each}){ $0 }
+# --
+before({$1:each}){ $0 }

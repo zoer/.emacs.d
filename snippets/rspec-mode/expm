@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: expect do ... end
+# --
+expect do
+  $1
+end.to $0

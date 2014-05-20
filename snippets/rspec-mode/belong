@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: belong_to(...).of_type(...)
+# --
+belong_to(:$1).of_type($0)

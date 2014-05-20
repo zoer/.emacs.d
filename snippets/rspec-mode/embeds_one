@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: embeds_one(...).of_type(...)
+# --
+embeds_one(:$1).of_type($0)
