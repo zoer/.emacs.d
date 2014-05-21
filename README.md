@@ -16,12 +16,12 @@ To grab all the dependencies:
 * `C-x 3  ` Split window vertically
 * `S-arrow` Jump to window to the left/right/up/down
 
-## Move lines
+### Move lines
 
 * `C-S-<up>` Move line up
 * `C-S-<down>` Move line down
 
-## Magit
+### Magit
 
 * `C-x m` Status
 
