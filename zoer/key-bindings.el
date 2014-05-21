@@ -1,5 +1,8 @@
 (windmove-default-keybindings)
 
+(global-set-key (kbd "C-S-<return>") 'open-line-above)
+(global-set-key (kbd "C-<return>") 'open-line-below)
+
 ;; Smart M-x
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
@@ -53,5 +56,30 @@
 ;; Goto last change
 (global-set-key (kbd "C-.") 'goto-last-change)
 (global-set-key (kbd "C-,") 'goto-last-change-reverse)
+
+
+;; Change word separators !!! broken
+(global-unset-key (kbd "C-x +")) ;; used to be balance-windows
+(global-set-key (kbd "C-x + -") (lambda (replace-region-by 's-dashed-words)))
+(global-set-key (kbd "C-x + _") (lambda (replace-region-by 's-snake-case)))
+(global-set-key (kbd "C-x + c") (lambda (replace-region-by 's-lower-camel-case)))
+(global-set-key (kbd "C-x + C") (lambda (replace-region-by 's-upper-camel-case)))
+
+;; Line movement
+(global-set-key (kbd "<C-S-up>") 'move-text-up)
+(global-set-key (kbd "<C-S-down>") 'move-text-down)
+
+;; Override key bindings
+(defvar my-keys-minor-mode-map (make-keymap) "my-keys-minor-mode keymap.")
+
+;; Comments
+(define-key my-keys-minor-mode-map (kbd "M-;") 'comment-or-uncomment-region-or-line)
+
+(define-minor-mode my-keys-minor-mode
+  "A minor mode so that my settings override key bindings"
+  t " my-keys" 'my-keys-minor-mode-map)
+(my-keys-minor-mode 1)
+
+
 
 (provide 'key-bindings)

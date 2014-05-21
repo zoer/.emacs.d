@@ -38,6 +38,8 @@
 (defun init--install-packages ()
   (packages-install
    '(magit
+     dired+
+     bookmark+
      paredit
      move-text
      gist
@@ -81,6 +83,7 @@
      browse-kill-ring
      css-mode
      scss-mode
+     dired-details
      prodigy)))
 
 (condition-case nil
@@ -90,9 +93,6 @@
    (init--install-packages)))
 
 (require 'defaults)
-
-;; Setup key bindings
-(require 'key-bindings)
 
 ;; Macros
 (require 'setup-macros)
@@ -112,6 +112,8 @@
 
 ;; Setup extensions
 (eval-after-load 'ido '(require 'setup-ido))
+(require 'dired)
+(eval-after-load 'dired '(require 'setup-dired))
 
 ;; Projectile
 (projectile-global-mode)
@@ -143,6 +145,7 @@
 (require 'setup-ruby)
 (require 'setup-paredit)
 (require 'setup-yasnippet)
+(require 'setup-bookmarks)
 (eval-after-load 'shell '(require 'setup-shell))
 
 ;; Default setup of smartparens
@@ -155,5 +158,8 @@
           markdown-mode)
   (add-hook it 'turn-on-smartparens-mode))
 
-(smex-initialize)
+;; Setup key bindings
+(require 'key-bindings)
 
+(smex-initialize)
+(put 'dired-find-alternate-file 'disabled nil)
