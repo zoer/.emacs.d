@@ -80,7 +80,6 @@
      multiple-cursors
      expand-region
      smart-forward
-     browse-kill-ring
      css-mode
      scss-mode
      dired-details

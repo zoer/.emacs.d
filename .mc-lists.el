@@ -21,6 +21,7 @@
         wdired-finish-edit
         wdired-previous-line
         yank-rectangle
+        yas-expand
         ))
 
 (setq mc/cmds-to-run-once

@@ -69,6 +69,26 @@
 (global-set-key (kbd "<C-S-up>") 'move-text-up)
 (global-set-key (kbd "<C-S-down>") 'move-text-down)
 
+;; Duplicate region
+(global-set-key (kbd "C-c d") 'duplicate-current-line-or-region)
+
+;; Toggle quotes
+(global-set-key (kbd "C-\"") 'toggle-quotes)
+
+;; Browse the kill ring
+(global-set-key (kbd "C-x C-y") 'browse-kill-ring)
+
+;; Killing text
+(global-set-key (kbd "C-S-k") 'kill-whole-line)
+(global-set-key (kbd "C-c C-w") 'kill-to-beginning-of-line)
+
+;; Transpose stuff with M-t
+(global-unset-key (kbd "M-t")) ;; which used to be transpose-words
+(global-set-key (kbd "M-t l") 'transpose-lines)
+(global-set-key (kbd "M-t s") 'transpose-sexps)
+(global-set-key (kbd "M-t p") 'transpose-params)
+(global-set-key (kbd "M-t w") 'transpose-words)
+
 ;; Override key bindings
 (defvar my-keys-minor-mode-map (make-keymap) "my-keys-minor-mode keymap.")
 
@@ -79,7 +99,5 @@
   "A minor mode so that my settings override key bindings"
   t " my-keys" 'my-keys-minor-mode-map)
 (my-keys-minor-mode 1)
-
-
 
 (provide 'key-bindings)

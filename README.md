@@ -16,6 +16,18 @@ To grab all the dependencies:
 * `C-x 3  ` Split window vertically
 * `S-arrow` Jump to window to the left/right/up/down
 
+### Killing text
+
+* `C-S-k  ` Kill whole line  
+* `C-c C-w` Kill to beginning of the line
+
+### Transpose
+
+* `M-t w` Transpose words
+* `M-t l` Transpose lines
+* `M-t s` Transpose sexps
+* `M-t p` Transpose params
+
 ### Move lines
 
 * `C-S-<up>` Move line up
@@ -65,3 +77,5 @@ To grab all the dependencies:
 
 * `C-'` Expand region
 * `M-;` Comment/Uncomment line or region
+* `C-c d` duplicate region or line
+* `C-"` Toggle quotes

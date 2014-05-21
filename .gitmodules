@@ -4,3 +4,6 @@
 [submodule "zoer/site-lisp/diminish"]
 	path = zoer/site-lisp/diminish
 	url = https://github.com/emacsmirror/diminish
+[submodule "zoer/site-slip/browse-kill-ring"]
+	path = zoer/site-slip/browse-kill-ring
+	url = https://github.com/T-J-Teru/browse-kill-ring.git
