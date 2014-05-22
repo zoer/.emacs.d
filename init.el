@@ -39,6 +39,7 @@
   (packages-install
    '(magit
      dired+
+     vagrant
      bookmark+
      paredit
      move-text
