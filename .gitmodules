@@ -7,3 +7,6 @@
 [submodule "zoer/site-slip/browse-kill-ring"]
 	path = zoer/site-slip/browse-kill-ring
 	url = https://github.com/T-J-Teru/browse-kill-ring.git
+[submodule "zoer/site-lisp/browse-kill-ring"]
+	path = zoer/site-lisp/browse-kill-ring
+	url = https://github.com/T-J-Teru/browse-kill-ring.git

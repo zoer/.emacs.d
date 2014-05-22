@@ -129,7 +129,6 @@
 ;; Smart M-x is smart
 (require 'smex)
 
-(require `browse-kill-ring)
 (setq browse-kill-ring-quit-action 'save-and-restore)
 
 ;; Company
