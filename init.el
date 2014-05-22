@@ -81,6 +81,7 @@
      expand-region
      smart-forward
      css-mode
+     ace-window
      scss-mode
      dired-details
      prodigy)))
@@ -108,6 +109,9 @@
 (guide-key-mode 1)
 (setq guide-key/recursive-key-sequence-flag t)
 (setq guide-key/popup-window-position 'bottom)
+
+;; Whitespaces
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 ;; Setup extensions
 (eval-after-load 'ido '(require 'setup-ido))

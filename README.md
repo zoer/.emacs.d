@@ -10,6 +10,7 @@ To grab all the dependencies:
 
 ### Window management
 
+* `M-p    ` Swith window
 * `C-x 0  ` Close this window
 * `C-x 1  ` Close other windows
 * `C-x 2  ` Split window horizontally
@@ -18,7 +19,7 @@ To grab all the dependencies:
 
 ### Killing text
 
-* `C-S-k  ` Kill whole line  
+* `C-S-k  ` Kill whole line
 * `C-c C-w` Kill to beginning of the line
 
 ### Transpose
@@ -79,3 +80,4 @@ To grab all the dependencies:
 * `M-;` Comment/Uncomment line or region
 * `C-c d` duplicate region or line
 * `C-"` Toggle quotes
+* `M-j` to char(prefix possible)

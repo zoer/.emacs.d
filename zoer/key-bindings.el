@@ -57,6 +57,9 @@
 (global-set-key (kbd "C-.") 'goto-last-change)
 (global-set-key (kbd "C-,") 'goto-last-change-reverse)
 
+;; Quickly jump in document with ace-jump-mode
+(global-set-key (kbd "M-j") 'ace-jump-mode)
+(define-key global-map (kbd "M-p") 'ace-window)
 
 ;; Change word separators !!! broken
 (global-unset-key (kbd "C-x +")) ;; used to be balance-windows
