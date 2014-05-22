@@ -149,6 +149,7 @@
 (require 'setup-paredit)
 (require 'setup-yasnippet)
 (require 'setup-bookmarks)
+(eval-after-load 'magit '(require 'setup-magit))
 (eval-after-load 'shell '(require 'setup-shell))
 
 ;; Default setup of smartparens

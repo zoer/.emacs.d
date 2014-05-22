@@ -59,6 +59,7 @@
 
 ;; Quickly jump in document with ace-jump-mode
 (global-set-key (kbd "M-j") 'ace-jump-mode)
+(setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
 (define-key global-map (kbd "M-p") 'ace-window)
 
 ;; Change word separators !!! broken

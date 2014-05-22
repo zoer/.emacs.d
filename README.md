@@ -4,7 +4,7 @@
 
 To grab all the dependencies:
 
-   git clone --recursive git://github.com/magnars/.emacs.d.git
+    git clone --recursive git://github.com/magnars/.emacs.d.git
 
 ## Shortcuts
 
@@ -74,10 +74,17 @@ To grab all the dependencies:
 * `C-.` Go to last change
 * `C-,` Go to recursive change
 
+### Indention
+
+* `C-x tab` Indention mode, after use arrow for move code
+* `C-u -2 C-x tab` Strip 2 spaces left
+
 ### Other
 
 * `C-'` Expand region
 * `M-;` Comment/Uncomment line or region
 * `C-c d` duplicate region or line
 * `C-"` Toggle quotes
-* `M-j` to char(prefix possible)
+* `M-j` Jump to char(prefix possible)
+* `M-\` Delete whitespaces around point
+* `C-x h` Mark whole buffer
