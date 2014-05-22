@@ -59,8 +59,6 @@
 
 ;; Quickly jump in document with ace-jump-mode
 (global-set-key (kbd "M-j") 'ace-jump-mode)
-(setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
-(define-key global-map (kbd "M-p") 'ace-window)
 
 ;; Change word separators !!! broken
 (global-unset-key (kbd "C-x +")) ;; used to be balance-windows
@@ -98,6 +96,10 @@
 
 ;; Comments
 (define-key my-keys-minor-mode-map (kbd "M-;") 'comment-or-uncomment-region-or-line)
+
+;; Window jump
+(setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
+(define-key my-keys-minor-mode-map (kbd "C-j") 'ace-window)
 
 (define-minor-mode my-keys-minor-mode
   "A minor mode so that my settings override key bindings"
