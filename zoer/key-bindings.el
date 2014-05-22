@@ -23,6 +23,8 @@
 ;; Expand region (increases selected region by semantic units)
 (global-set-key (kbd "C-'") 'er/expand-region)
 
+;; Change kill buffer behavior
+(global-set-key (kbd "C-x k") 'kill-this-buffer)
 
 ;; File finding
 (global-set-key (kbd "C-x M-f") 'ido-find-file-other-window)
