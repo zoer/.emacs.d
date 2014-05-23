@@ -65,6 +65,7 @@
      company-inf-ruby
      whitespace-cleanup-mode
      elisp-slime-nav
+     slim-mode
      autopair
      textmate
      move-text

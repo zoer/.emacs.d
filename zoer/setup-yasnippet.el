@@ -1,7 +1,7 @@
 (require 'yasnippet)
 
 ;; Use only own snippets, do not use bundled ones
-(setq yas-snippet-dirs '("~/.emacs.d/snippets"))
+(setq yas-snippet-dirs '("~/.emacs.d/zoer/snippets"))
 (yas-global-mode 1)
 
 ;; Jump to end of snippet definition
