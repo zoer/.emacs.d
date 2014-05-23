@@ -25,7 +25,11 @@
   (set-face-attribute 'default nil :height 130)
   (custom-theme-set-faces
    'spolsky
+   '(font-lock-builtin-face ((t (:foreground "#AE81FF"))))
    '(font-lock-comment-face ((t (:foreground "orange")))))
+   '(font-lock-keyword-face ((t (:foreground, "#AE81FF"))))
+   '(font-lock-keyword-face ((t (:foreground, "#AE81FF"))))
+   '(lazy-heighlight ((t (:backgound "#AE81FF"))))
   (custom-theme-set-variables
    'spolsky
    '(linum-format " %3i ")))

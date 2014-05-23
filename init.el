@@ -94,6 +94,9 @@
    (package-refresh-contents)
    (init--install-packages)))
 
+;; Set hotkeys available in russian locale
+(setq default-input-method "russian-computer")
+
 (require 'defaults)
 
 ;; Set up appearance early

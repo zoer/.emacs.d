@@ -20,6 +20,7 @@
         smex
         wdired-finish-edit
         wdired-previous-line
+        yaml-electric-backspace
         yank-rectangle
         yas-expand
         ))
