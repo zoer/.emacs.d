@@ -28,8 +28,6 @@
 (setq-default save-place t)
 (setq save-place-file (expand-file-name ".places" config-directory))
 
-;; Set up appearance early
-(require 'appearance)
 
 ;; Setup packages
 (require 'setup-package)
@@ -38,6 +36,7 @@
 (defun init--install-packages ()
   (packages-install
    '(magit
+     sublime-themes
      dired+
      vagrant
      bookmark+
@@ -96,6 +95,9 @@
    (init--install-packages)))
 
 (require 'defaults)
+
+;; Set up appearance early
+(require 'appearance)
 
 ;; Macros
 (require 'setup-macros)

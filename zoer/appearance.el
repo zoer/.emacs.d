@@ -17,7 +17,20 @@
   (disable-theme 'prez)
   (load-theme 'default-black t))
 
-(use-default-theme)
+(defun use-sublime-theme ()
+  (interactive)
+  (disable-theme 'default-black)
+  (disable-theme 'prez)
+  (load-theme 'spolsky t)
+  (set-face-attribute 'default nil :height 130)
+  (custom-theme-set-faces
+   'spolsky
+   '(font-lock-comment-face ((t (:foreground "orange")))))
+  (custom-theme-set-variables
+   'spolsky
+   '(linum-format " %3i ")))
+
+(use-sublime-theme)
 
 ;; Don't defer screen updates when performing operations
 (setq redisplay-dont-pause t)
@@ -34,4 +47,3 @@
 (eval-after-load "guide-key" '(diminish 'guide-key-mode))
 
 (provide 'appearance)
-
