@@ -42,6 +42,7 @@
      vagrant
      bookmark+
      paredit
+     yard-mode
      move-text
      gist
      htmlize
@@ -144,6 +145,9 @@
 
 ;; YAML
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
+
+;; Yard
+(add-hook 'ruby-mode-hook 'yard-mode)
 
 ;; Setup extensions
 (require 'setup-ruby)
