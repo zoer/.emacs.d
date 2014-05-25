@@ -16,6 +16,7 @@ To grab all the dependencies:
 * `C-x 2  ` Split window horizontally
 * `C-x 3  ` Split window vertically
 * `S-arrow` Jump to window to the left/right/up/down
+* `C-x t  ` Open last killed buffer
 
 ### Killing text
 
@@ -88,3 +89,4 @@ To grab all the dependencies:
 * `M-j` Jump to char(prefix possible)
 * `M-\` Delete whitespaces around point
 * `C-x h` Mark whole buffer
+* `M-^` Join line

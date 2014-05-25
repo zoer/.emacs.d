@@ -17,10 +17,12 @@
         paredit-forward-delete
         paredit-forward-kill-word
         paredit-kill-region-or-backward-word
+        projectile-find-file-other-window
         smex
         wdired-finish-edit
         wdired-previous-line
         yaml-electric-backspace
+        yaml-electric-dash-and-dot
         yank-rectangle
         yas-expand
         ))

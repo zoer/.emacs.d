@@ -342,3 +342,15 @@ region-end is used."
   (while (not (looking-at "}"))
     (join-line -1))
   (back-to-indentation))
+
+(require 'cl)
+(require 'recentf)
+
+(defun find-last-killed-file ()
+  (interactive)
+  (let ((active-files (loop for buf in (buffer-list)
+                            when (buffer-file-name buf) collect it)))
+    (loop for file in recentf-list
+          unless (member file active-files) return (find-file file))))
+
+(define-key global-map (kbd "C-x t") 'find-last-killed-file)

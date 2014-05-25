@@ -60,6 +60,7 @@
 (global-set-key (kbd "C-,") 'goto-last-change-reverse)
 
 ;; Quickly jump in document with ace-jump-mode
+(global-set-key (kbd "C-x w") 'ace-swap-window)
 (global-set-key (kbd "M-j") 'ace-jump-mode)
 
 ;; Change word separators !!! broken

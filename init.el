@@ -159,12 +159,13 @@
 (require 'setup-paredit)
 (require 'setup-yasnippet)
 (require 'setup-bookmarks)
+(require 'setup-css)
 (eval-after-load 'magit '(require 'setup-magit))
 (eval-after-load 'shell '(require 'setup-shell))
 
 ;; Default setup of smartparens
 (require 'smartparens-config)
-(setq sp-autoescape-string-quote nil)
+;; (setq sp-autoescape-string-quote nil)
 (--each '(css-mode-hook
           restclient-mode-hook
           js-mode-hook
